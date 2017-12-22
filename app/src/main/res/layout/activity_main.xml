@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.olaplay.DownloadActivity">
+
+    <RelativeLayout
+        android:id="@+id/hidden"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#90111111">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            >
+            <ImageView
+                android:id="@+id/cancel_btn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_cancel_black_48dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/cancel_btn">
+
+                      <TextView
+                          android:id="@+id/hidden_name"
+                          android:text="Heyyyyy"
+                          android:textColor="#ffffff"
+                          android:textSize="30dp"
+                           android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                          android:gravity="center_horizontal"
+                       />
+                       <TextView
+                           android:id="@+id/hidden_artist"
+                           android:text="Heyyyyy"
+                           android:textSize="20dp"
+                           android:layout_width="match_parent"
+                           android:layout_height="50dp"
+                           android:textColor="#ffffff"
+                           android:gravity="center_horizontal"
+
+                           />
+            </LinearLayout>
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/hidden_image"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:foregroundGravity="center"
+            android:layout_above="@+id/play_pause_container_hidden"
+            android:layout_marginBottom="100dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/play_pause_container_hidden"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/play_pause_container"
+            android:background="#111111"
+            android:gravity="center_horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true">
+
+            <Button
+                android:id="@+id/skip_previous_hidden"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/main_margin"
+                android:background="@drawable/ic_skip_previous_white_24dp"
+                android:clickable="true"
+                android:foreground="?android:selectableItemBackground" />
+
+            <com.ohoussein.playpause.PlayPauseView
+                android:id="@+id/play_pause_view"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/main_margin"
+                android:clickable="true"
+                android:foreground="?android:selectableItemBackground"
+                app:fill_color="#ffffff"
+                app:pause_bg="#111111"
+                app:play_bg="#111111">
+
+            </com.ohoussein.playpause.PlayPauseView>
+
+            <Button
+                android:id="@+id/skip_next_hidden"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/main_margin"
+                android:background="@drawable/ic_skip_next_white_24dp"
+                android:clickable="true"
+                android:foreground="?android:selectableItemBackground" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/textView" />
+
+
+        <ListView
+            android:id="@+id/downloadedlistsong"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/page_rank_container"/>
+
+
+<LinearLayout
+    android:id="@+id/page_rank_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:gravity="center_horizontal"
+    android:layout_marginBottom="105dp"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/first_download"
+        android:layout_width="60dp"
+        android:layout_height="33dp"
+        android:layout_marginLeft="21dp"
+        android:text="Button"
+        android:visibility="invisible"
+        android:layout_above="@+id/next_previous_container"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/second_download"
+        android:layout_width="60dp"
+        android:layout_height="@dimen/page_rank_button_height"
+        android:visibility="invisible"
+        android:layout_alignTop="@+id/first"
+        android:layout_toEndOf="@+id/first"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/none_download"
+        android:layout_width="60dp"
+        android:layout_height="@dimen/page_rank_button_height"
+        android:visibility="invisible"
+        android:layout_alignTop="@+id/second"
+        android:layout_toEndOf="@+id/second"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/last_download"
+        android:layout_width="60dp"
+        android:layout_marginRight="21dp"
+        android:layout_height="@dimen/page_rank_button_height"
+        android:visibility="invisible"
+        android:layout_alignBottom="@+id/none"
+        android:layout_toEndOf="@+id/none"
+        android:text="Button" />
+</LinearLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/next_previous_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_above="@+id/play_pause_container"
+        android:layout_marginBottom="@dimen/next_prev_bottom_margin">
+
+        <Button
+            android:id="@+id/prev"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/page_rank_button_height"
+            android:visibility="visible"
+            />
+        <Button
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/page_rank_button_height"
+            android:visibility="visible"
+            android:layout_alignParentEnd="true"
+            />
+
+
+
+
+    </RelativeLayout>
+    <View
+        android:id="@+id/line"
+        android:layout_width="fill_parent"
+        android:layout_height="4dp"
+        android:background="#111111"
+        android:layout_margin="4dp"
+        android:layout_above="@+id/play_pause_container"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/play_pause_container"
+        android:layout_alignParentBottom="true"
+        android:background="#111111"
+        android:id="@+id/play_pause_container"
+        android:visibility="gone">
+        <ImageView
+            android:id="@+id/skip_previous"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/main_margin"
+            android:layout_alignParentStart="true"
+            android:clickable="true"
+            android:foreground="?android:selectableItemBackground"
+            android:src="@drawable/ic_skip_previous_white_24dp"
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/skip_previous"
+            android:layout_marginStart="48dp">
+       <TextView
+           android:text="kasljasdj"
+           android:layout_width="50dp"
+           android:layout_height="0dp"
+           android:layout_weight="1"
+           />
+            <TextView
+                android:text="sjksajkasj"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/skip_next"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="@dimen/main_margin"
+            android:background="@drawable/ic_skip_next_white_24dp"
+            android:clickable="true"
+            android:foreground="?android:selectableItemBackground" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

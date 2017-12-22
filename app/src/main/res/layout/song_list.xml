@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list_item1"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_item_height"
+    android:background="#ffffff"
+    android:orientation="horizontal">
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#111111"
+        android:layout_above="@+id/play_pause_container"
+        />
+    <ImageView
+        android:id="@+id/coverimage"
+        android:layout_width="@dimen/list_item_height"
+        android:layout_height="@dimen/list_item_height" />
+
+    <LinearLayout
+        android:id="@+id/text_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_height"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/coverimage"
+        android:orientation="vertical"
+        android:paddingLeft="16dp">
+
+        <TextView
+            android:id="@+id/song_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:textSize="17dp"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/black"
+            tools:text="lutti" />
+
+        <TextView
+            android:id="@+id/artist_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:textSize="10dp"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#c1c0b8"
+            tools:text="one" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/starred"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_alignRight="@+id/download"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="32dp"
+        android:src="@drawable/ic_star_border_black_48dp" />
+
+    <ImageView
+        android:id="@+id/download"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/ic_file_download_black_48dp" />
+
+</RelativeLayout>

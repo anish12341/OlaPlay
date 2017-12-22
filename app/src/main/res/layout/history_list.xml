@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list_item1"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_item_height_history"
+    android:background="#ffffff"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:id="@+id/text_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_height_history"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="25dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/state"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@android:color/black"
+                android:textSize="15dp"
+                tools:text="lutti" />
+            <TextView
+                android:id="@+id/name"
+                android:textStyle="bold"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@android:color/black"
+                android:textSize="15dp"
+                tools:text="lutti" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/time_stamp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:textSize="@dimen/main_margin"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#c1c0b8"
+            tools:text="one" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

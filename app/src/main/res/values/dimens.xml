@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="main_margin">10dp</dimen>
+    <dimen name="play_pause_container">70dp</dimen>
+    <dimen name="play_pause_image">65dp</dimen>
+    <dimen name="page_rank_bottom_margin">200dp</dimen>
+    <dimen name="page_rank_button_height">35dp</dimen>
+    <dimen name="page_rank_button_width">60dp</dimen>
+    <dimen name="next_prev_bottom_margin">73dp</dimen>
+    <dimen name="no_download_playlist">50dp</dimen>
+    <dimen name="dynamic_text">15dp</dimen>
+    <dimen name="line_height">4dp</dimen>
+    <dimen name="list_item_height">80dp</dimen>
+    <dimen name="list_item_height_history">60dp</dimen>
+    <dimen name="list_delete">28dp</dimen>
+    <dimen name="list_delete_min">12dp</dimen>
+    <dimen name="list_delete_max">17dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cordinator"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.example.android.olaplay.HistoryActivity">
+
+    <TextView
+        android:id="@+id/no_history"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/no_history"
+        android:textSize="@dimen/no_download_playlist"
+        android:visibility="invisible"
+        android:fontFamily="sans-sarif-medium"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <ListView
+        android:id="@+id/list_history"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:drawSelectorOnTop="true"
+        android:layout_above="@+id/clear_history"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/clear_history"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/page_rank_button_height"
+        android:background="#111111"
+        android:textColor="#ffffff"
+        android:text="Clear History"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+         />
+
+
+</RelativeLayout>
